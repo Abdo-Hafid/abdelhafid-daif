@@ -1,0 +1,251 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Load Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <nav class="justify-content-center">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="btn-nav" href="mailto:abdelhafid.dev@gmail.com">
+                    <img src="{% static 'img/gmail.png' %}" alt="home icon" /> 
+                    <span class="">abdelhafid.dev@gmail.com</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container text-center" style="margin-top:80px">
+        <div class="row align-items-center">
+          <div class="col custom-box">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="profile-pic-container text-center">
+                        <img src="{% static 'img/photo.png' %}" alt="Profile Picture" class="profile-pic" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="custom-border">
+                        <p class="text-left">
+                            <div class="custom-spinner spinner-grow spinner-grow-sm" role="status">
+                                <span class="visually-hidden"></span>
+                            </div>
+                            Available For Work
+                        </p>
+                    </div>
+                    <h4>ABDELHAFID DAIF</h4>
+                    <p class="text-left">
+                        <img src="{% static 'img/location.png' %}" alt="Location"/> Morocco
+                    </p>
+                </div>
+                <div class="col-14 custom-boxaboutme">
+                    <h4 class="text-left">About me</h4>
+                    <p class="text-left">Passionate about building innovative and efficient web, desktop, and mobile applications, I specialize in transforming complex requirements into seamless and user-friendly solutions.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col align-items-center"style="">
+            <div class="row align-items-center "style="">
+                <div class="custom-boxaboutme">
+                    <h1><span style="color: orangered;">+8 ,</span><span style="color: #575659;"> YEARS OF EXPERIENCE</span></h1>
+                    <h1><span style="color: orangered;">+20 ,</span><span style="color: #575659;"> HAPPY CLIENTS</span></h1>
+                </div>
+                {% comment %} <div class="custom-boxaboutme">
+                    <h4 class="text-center" >Have an Idea ?</h4></br>
+                    <button href="#" class="button-89">Let's work together</button>
+                </div> {% endcomment %}
+                <div class="custom-boxaboutme"style = "margin-top:2px;">
+                    <h4 class="text-center"><img src="{% static 'img/deplome.png' %}" alt=""/> Education</h4>
+                    <p style="color: #575659;">Full Stack Developer</p>
+                    <h6>Technical Specialist in Software Development.</h6>
+                    <p><span style="color: #575659;">Year Of Passing :</span> 2018</p>
+                </div>
+            </div>
+          </div>
+          <div class="col text-center custom-boxaboutme">
+            <h4 class=""><img src="{% static 'img/tool.png' %}" alt=""/> TOOLS</h4>
+            <div class="row align-items-center" style="text-align: center; margin: 0 auto;">
+                    <!-- Grille des outils -->
+                        <div class="col-md-6" style="text-align: center; ">
+                            <div class="row row-cols-2 g-4">
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/react.png' %}" alt="" class="tool-icon" />
+                                    <h5> React</h5>
+                                    <p style="font-size:12px;color: #575659;">FrontendLibrary</p>
+                                </div>
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/js.png' %}" alt="" class="tool-icon" />
+                                    <h5> JavaScript</h5>
+                                    <p style="font-size:12px;color: #575659;">Interactive web</p>
+                                </div>
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/html.png' %}" alt="" class="tool-icon" />
+                                    <h5> HTML</h5>
+                                    <p style="font-size:12px;color: #575659;">Markup language</p>
+                                </div>
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/css.png' %}" alt="" class="tool-icon" />
+                                    <h5> CSS</h5>
+                                    <p style="font-size:12px;color: #575659;">Stylesheets</p>
+                                </div> 
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row row-cols-2 g-4">
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/python.png' %}" alt="" class="tool-icon" />
+                                    <h5>Python</h5>
+                                    <p style="font-size:12px;color: #575659;">Scripting language</p>
+                                </div>
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/django.png' %}" alt="" class="tool-icon" />
+                                    <h5>Django</h5>
+                                    <p style="font-size:12px;color: #575659;">Web framework</p>
+                                </div>
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/postgres.png' %}" alt="" class="tool-icon" />
+                                    <h5>PostgreSQL</h5>
+                                    <p style="font-size:12px;color: #575659;">Relational DB</p>
+                                </div>
+                                <div class="col custom-border">
+                                    <img src="{% static 'img/mysql.png' %}" alt="" class="tool-icon" />
+                                    <h5>MySQL</h5>
+                                    <p style="font-size:12px;color: #575659;">Relational DB</p>
+                                </div>
+                            </div>
+                        </div>                
+            </div>
+          </div>
+        </div>
+    </div>
+    {% comment %} <div class="sidebar">
+        <div class="profile-pic-container text-center">
+            <img src="{% static 'img/photo.png' %}" alt="Profile Picture" class="profile-pic" />
+        </div>
+        <h2 class="text-center">ABDELHAFID DAIF</h2>
+        <p class="text-center"style="margin:10px;margin-top:50px;">Technical Specialist in Software Development.</p>
+        <ul class="social-media-icons list-unstyled d-flex justify-content-center">
+            <li>
+                <a href="#"><img src="{% static 'img/instagram.png' %}" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="{% static 'img/whatssap.png' %}"  /></a>
+            </li>
+            <li>
+                <a href="#"><img src="{% static 'img/gmail.png' %}"/></a>
+            </li>
+        </ul>
+    </div> {% endcomment %}
+    <div class="sidebar-content text-left">
+        <h1 class="title">
+            <span style="color: #fff;">Full Stack</span>
+            <span style="color: #575659;">Developer</span>
+        </h1>
+        <div class="row goo">
+            <div class="col">
+                <p class="text-muted">
+                    Practical experience in web and mobile development within a professional environment.</br>
+                    Strong expertise in essential IT and multimedia development techniques: frontend, backend, databases (DBMS), common frameworks, application design, and IT project management.                </p>
+            </div>
+            <div class="col text-center">
+                <div class=" " >
+                    <h2><span style="color: #575659;">have an </span>idea<span style="color: #575659;">?</span></h2>
+                    <a class="a-link" href="#">
+                        ' Let's Work Together <img src="{% static 'img/handshake.png' %}" alt="home icon" />'
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </div>
+       
+         <!-- Section avec défilement horizontal -->
+    {% comment %} <div class="scrolling-wrapper">
+        <div class="tool-item2">
+            <img src="{% static 'img/html.png' %}" alt="HTML" class="tool-icon2" />
+            <h4>HTML</h4>
+            <p>Markup language</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/css.png' %}" alt="CSS" class="tool-icon2" />
+            <h4>CSS</h4>
+            <p>Stylesheets</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/js.png' %}" alt="JavaScript" class="tool-icon2" />
+            <h4>JavaScript</h4>
+            <p>Interactive web</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/react.png' %}" alt="React" class="tool-icon2" />
+            <h4>React</h4>
+            <p>Frontend library</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/python.png' %}" alt="Python" class="tool-icon2" />
+            <h4>Python</h4>
+            <p>Scripting language</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/django.png' %}" alt="Django" class="tool-icon2" />
+            <h4>Django</h4>
+            <p>Web framework</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/postgres.png' %}" alt="PostgreSQL" class="tool-icon2" />
+            <h4>PostgreSQL</h4>
+            <p>Relational DB</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/mysql.png' %}" alt="MySQL" class="tool-icon2" />
+            <h4>MySQL</h4>
+            <p>Database system</p>
+        </div>
+        <div class="tool-item2">
+            <img src="{% static 'img/csharp.png' %}" alt="C#" class="tool-icon2" />
+            <h4>C#</h4>
+            <p>Desktop & Web apps</p>
+        </div>
+    </div> {% endcomment %}
+       
+<div class="list">
+       <ul>
+        <li><img src="{% static 'img/postgres.png' %}" alt="PostgreSQL" class="tool-icon2" /> PostgreSQL</li>
+        <li><img src="{% static 'img/mysql.png' %}" alt="MySQL" class="tool-icon2" /> MySQL</li>
+        <li><img src="{% static 'img/csharp.png' %}" alt="C#" class="t#ool-icon2" /> C#</li>
+        <li><img src="{% static 'img/python.png' %}" alt="Python" class="tool-icon2" /> Python</li>
+        <li><img src="{% static 'img/django.png' %}" alt="Django" class="tool-icon2" /> Django</li>
+        <li><img src="{% static 'img/react.png' %}" alt="React" class="tool-icon2" /> React</li>
+        <li><img src="{% static 'img/git.png' %}" alt="React" class="tool-icon2" /> git</li>
+    </ul>
+    <ul class="alt">
+        <li><img src="{% static 'img/html.png' %}" alt="HTML" class="tool-icon2" /> HTML</li>
+        <li><img src="{% static 'img/css.png' %}" alt="CSS" class="tool-icon2" /> CSS</li>
+        <li><img src="{% static 'img/js.png' %}" alt="JavaScript" class="tool-icon2" />JS</li>
+        <li><img src="{% static 'img/android.png' %}" alt="JavaScript" class="tool-icon2" /> Android Studio</li>
+        <li><img src="{% static 'img/sql.png' %}" alt="MySQL" class="tool-icon2" /> SQL</li>
+        <li><img src="{% static 'img/git.png' %}" alt="React" class="tool-icon2" /> Git</li>
+        <li><img src="{% static 'img/figma.png' %}" alt="React" class="tool-icon2" /> Figma</li>
+    </ul>
+</div>
+<div class="custom-boxaboutme contact-section">
+    <h2>Contact Me via WhatsApp</h2>    
+    <textarea id="whatsapp-message" rows="4" placeholder="Type your message here..." ></textarea></br>
+    
+    <button id="send-whatsapp" class="whatsapp-button"><img src="{% static 'img/icons8-send-24.png' %}"/> Send</button>
+</div>
+</div>    
+    <!-- Load Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
